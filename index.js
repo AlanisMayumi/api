@@ -15,6 +15,12 @@ const users = [
     password: "myg2022",
     isAdmin: false,
   },
+  {
+    id: 3,
+    userName: "Kim Seok Jin",
+    password: "ksj2022",
+    isAdmin: false,
+  },
 ];
 
 app.post("/api/login", (req, res) => {

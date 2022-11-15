@@ -112,7 +112,7 @@ app.post("/api/login", (req, res) => {
   }
 });
 
-app.post("api/logout", verify, (req, res) => {
+app.post("/api/logout", verify, (req, res) => {
   const refreshToken = req.body.token;
 
   refreshTokens = refreshTokens.filter((token) => token !== refreshToken);
